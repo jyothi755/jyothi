@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{
+    int x,y,c,i=1;
+    printf("enter two numbers");
+    scanf("%d%d",&x,&y);
+    c=(x>y)?x:y;
+    while(1)
+    {
+    if(((i*c)%x==0)&&((i*c)%y==0))
+    {
+        printf("lcm of two numbers is %d",i*c);
+        break;
+    }
+    i++;
+    }
+}
