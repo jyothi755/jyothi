@@ -1,0 +1,25 @@
+#include<stdio.h>
+void main()
+{
+    int num,i;
+    printf("enter a number");
+    scanf("%d",&num);
+    if(num%2==0)
+    {
+        for(i=1;i<=10;i++)
+    {
+    printf("%d*%d=%d",i,num,i*num);
+    printf("\n");
+}
+}
+else
+{
+    for(i=1;i<=15;i++)
+    {
+        printf("%d*%d=%d",i,num,i*num);
+        printf("\n");
+    }
+    }
+}
+        
+    
