@@ -1,0 +1,19 @@
+#include<stdio.h>
+void main()
+{
+    int a[20],l,i,j,max;
+    printf("enter no of elements");
+    scanf("%d",&l);
+    printf("enter the elements ");
+    for(i=0;i<l;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    max=a[0];
+    for(j=1;j<=l;j++)
+    {
+        if(max<a[j])
+        max=a[j];
+    }
+    printf("the largest number is %d",max);
+}
