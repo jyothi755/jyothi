@@ -1,0 +1,58 @@
+#include <stdio.h>
+ void starpat()
+{
+    int i,j,n;
+    printf("enter the value");
+    scanf("%d",&n);
+    for(i=n;i>0;i--)
+    {
+        for(j=0;j<i;j++)
+        {
+            printf(" * ");
+        }
+        printf("\n");
+    }
+}
+void hashpat()
+{
+    int i,j,n;
+    printf("enter the value");
+    scanf("%d",&n);
+    for(i=n;i>0;i--)
+    {
+        for(j=0;j<i;j++)
+        {
+            printf(" # ");
+        }
+        printf("\n");
+    }
+}    
+void    atratepat()
+{
+    int i,j,n;
+    printf("enter the value");
+    scanf("%d",&n);
+    for(i=n;i>0;i--)
+    {
+        for(j=0;j<i;j++)
+        {
+            printf(" @ ");
+        }
+        printf("\n"); 
+    }
+}
+void main()
+{
+    char p;
+    printf("enter pattern *,#,@");
+    scanf("%c",&p);
+    if(p=='*')
+    starpat();
+    else if(p=='#')
+    hashpat();
+    else if(p=='@')
+    atratepat();
+    else
+    printf("enter correct pattern");
+    
+    }
